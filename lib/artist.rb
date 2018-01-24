@@ -4,7 +4,7 @@ class Artist
 
   extend Memorable::ClassMethods
   include Paramable, Memorable::InstanceMethods
-  
+
   attr_accessor :name
   attr_reader :songs
 
@@ -15,14 +15,14 @@ class Artist
     super
     @songs = []
   end
-  
+
 
   def self.all
     @@artists
   end
 
-  
-  
+
+
 
   def add_song(song)
     @songs << song
